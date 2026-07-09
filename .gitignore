@@ -18,7 +18,6 @@ env/
 
 # ---- Training artifacts ----
 catboost_info/
-joblib
 
 # ---- Large regenerable pipeline data (NOT needed to run the app) ----
 # The app runs from the committed model artifacts + small snapshots. These big
