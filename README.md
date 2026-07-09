@@ -96,6 +96,43 @@ the odds and the tournament simulation meaningful.
 
 ---
 
+## Results & experiments
+
+Reproduce everything with one command (writes `reports/experiments.md`):
+
+```bash
+python -m src.models.experiments
+```
+
+> Needs the full match dataset, which is gitignored because of its size. On a fresh
+> clone, rebuild it first with the [Rebuild data & models](#rebuild-data--models)
+> steps (the app itself runs without this).
+
+**Did it learn anything?** Held-out test, 2019–2025 (6,868 matches):
+
+| Model | Accuracy | Log loss |
+| --- | --- | --- |
+| Majority class (always Home) | 0.479 | 1.050 |
+| Higher-Elo pick / Elo-only | 0.600 | 0.868 |
+| **Softmax engine** (from scratch, 10 features) | 0.611 | 0.862 |
+| CatBoost (production) | 0.612 | 0.859 |
+
+A hand-written softmax (`src/models/softmax.py`, ~40 lines of numpy) **matches the
+tuned gradient-boosted model** — so the signal is mostly linear in Elo + recent form,
+and boosting adds only a hair. Both clearly beat the trivial baseline; both beat pure
+Elo only slightly.
+
+**Experiment 1 — does squad market value help?** Adding `squad_value_diff` to a
+softmax that already has Elo + form (matches between the 48 finalists): **−0.003 log
+loss** — essentially no help. Elo already encodes strength. (Market values are a
+current snapshot, so this is a *lenient* test — and it still doesn't move.)
+
+**Experiment 2 — weighted-K vs flat-K Elo**, judged on 1,049 World Cup finals
+matches: the goal-margin **weighted-K wins by 0.008 log loss** (0.971 vs 0.979) — a
+small but consistent edge, which is why the pipeline uses it.
+
+---
+
 ## The app — Touchline
 
 `app/streamlit_app.py`, five views:
