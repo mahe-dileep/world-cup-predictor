@@ -1,0 +1,36 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- Secrets / environment ----
+.env
+.streamlit/secrets.toml
+
+# ---- OS / editor / tooling ----
+.DS_Store
+.vscode/
+.claude/
+
+# ---- Training artifacts ----
+catboost_info/
+
+# ---- Large regenerable pipeline data (NOT needed to run the app) ----
+# The app runs from the committed model artifacts + small snapshots. These big
+# intermediates are rebuilt from data/raw via the pipeline scripts (see README).
+data/processed/matches_ml.csv
+data/interim/form_features.csv
+data/interim/matchup_features.csv
+data/interim/elo_history.csv
+data/interim/elo_snapshots.csv
+data/interim/cleaned_matches.csv
+
+# Everything the deployed app needs is intentionally committed:
+#   models/*.pkl, models/*.json, app/data/tournament.json,
+#   data/processed/{features,latest_elo,team_form_snapshot}.*,
+#   data/interim/{team_name_mapping,squads,squad_features,player_transfermarkt}.csv,
+#   data/raw/**

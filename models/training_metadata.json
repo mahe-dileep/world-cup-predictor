@@ -1,0 +1,422 @@
+{
+  "training_date": "2026-07-08T16:23:07.995727",
+  "dataset_size": 49490,
+  "feature_count": 167,
+  "feature_names": [
+    "competition",
+    "neutral",
+    "home_elo",
+    "away_elo",
+    "home_ppg_3",
+    "home_wins_3",
+    "home_draws_3",
+    "home_losses_3",
+    "home_goals_scored_3",
+    "home_goals_conceded_3",
+    "home_goal_diff_3",
+    "home_win_pct_3",
+    "home_clean_sheets_3",
+    "home_failed_to_score_3",
+    "home_avg_opp_elo_3",
+    "home_avg_goals_scored_3",
+    "home_avg_goals_conceded_3",
+    "home_avg_goal_diff_3",
+    "home_home_played_3",
+    "home_away_played_3",
+    "home_neutral_played_3",
+    "home_matches_in_window_3",
+    "home_ppg_5",
+    "home_wins_5",
+    "home_draws_5",
+    "home_losses_5",
+    "home_goals_scored_5",
+    "home_goals_conceded_5",
+    "home_goal_diff_5",
+    "home_win_pct_5",
+    "home_clean_sheets_5",
+    "home_failed_to_score_5",
+    "home_avg_opp_elo_5",
+    "home_avg_goals_scored_5",
+    "home_avg_goals_conceded_5",
+    "home_avg_goal_diff_5",
+    "home_home_played_5",
+    "home_away_played_5",
+    "home_neutral_played_5",
+    "home_matches_in_window_5",
+    "home_ppg_10",
+    "home_wins_10",
+    "home_draws_10",
+    "home_losses_10",
+    "home_goals_scored_10",
+    "home_goals_conceded_10",
+    "home_goal_diff_10",
+    "home_win_pct_10",
+    "home_clean_sheets_10",
+    "home_failed_to_score_10",
+    "home_avg_opp_elo_10",
+    "home_avg_goals_scored_10",
+    "home_avg_goals_conceded_10",
+    "home_avg_goal_diff_10",
+    "home_home_played_10",
+    "home_away_played_10",
+    "home_neutral_played_10",
+    "home_matches_in_window_10",
+    "home_days_since_prev_match",
+    "home_rest_days",
+    "home_matches_prev_30d",
+    "home_matches_prev_90d",
+    "home_home5_win_pct",
+    "home_home5_avg_goals_scored",
+    "home_home5_avg_goals_conceded",
+    "home_away5_win_pct",
+    "home_away5_avg_goals_scored",
+    "home_away5_avg_goals_conceded",
+    "away_ppg_3",
+    "away_wins_3",
+    "away_draws_3",
+    "away_losses_3",
+    "away_goals_scored_3",
+    "away_goals_conceded_3",
+    "away_goal_diff_3",
+    "away_win_pct_3",
+    "away_clean_sheets_3",
+    "away_failed_to_score_3",
+    "away_avg_opp_elo_3",
+    "away_avg_goals_scored_3",
+    "away_avg_goals_conceded_3",
+    "away_avg_goal_diff_3",
+    "away_home_played_3",
+    "away_away_played_3",
+    "away_neutral_played_3",
+    "away_matches_in_window_3",
+    "away_ppg_5",
+    "away_wins_5",
+    "away_draws_5",
+    "away_losses_5",
+    "away_goals_scored_5",
+    "away_goals_conceded_5",
+    "away_goal_diff_5",
+    "away_win_pct_5",
+    "away_clean_sheets_5",
+    "away_failed_to_score_5",
+    "away_avg_opp_elo_5",
+    "away_avg_goals_scored_5",
+    "away_avg_goals_conceded_5",
+    "away_avg_goal_diff_5",
+    "away_home_played_5",
+    "away_away_played_5",
+    "away_neutral_played_5",
+    "away_matches_in_window_5",
+    "away_ppg_10",
+    "away_wins_10",
+    "away_draws_10",
+    "away_losses_10",
+    "away_goals_scored_10",
+    "away_goals_conceded_10",
+    "away_goal_diff_10",
+    "away_win_pct_10",
+    "away_clean_sheets_10",
+    "away_failed_to_score_10",
+    "away_avg_opp_elo_10",
+    "away_avg_goals_scored_10",
+    "away_avg_goals_conceded_10",
+    "away_avg_goal_diff_10",
+    "away_home_played_10",
+    "away_away_played_10",
+    "away_neutral_played_10",
+    "away_matches_in_window_10",
+    "away_days_since_prev_match",
+    "away_rest_days",
+    "away_matches_prev_30d",
+    "away_matches_prev_90d",
+    "away_home5_win_pct",
+    "away_home5_avg_goals_scored",
+    "away_home5_avg_goals_conceded",
+    "away_away5_win_pct",
+    "away_away5_avg_goals_scored",
+    "away_away5_avg_goals_conceded",
+    "elo_diff",
+    "ppg_diff_3",
+    "win_pct_diff_3",
+    "goals_scored_diff_3",
+    "goals_conceded_diff_3",
+    "goal_diff_diff_3",
+    "avg_opp_elo_diff_3",
+    "wins_diff_3",
+    "draws_diff_3",
+    "losses_diff_3",
+    "ppg_diff_5",
+    "win_pct_diff_5",
+    "goals_scored_diff_5",
+    "goals_conceded_diff_5",
+    "goal_diff_diff_5",
+    "avg_opp_elo_diff_5",
+    "wins_diff_5",
+    "draws_diff_5",
+    "losses_diff_5",
+    "ppg_diff_10",
+    "win_pct_diff_10",
+    "goals_scored_diff_10",
+    "goals_conceded_diff_10",
+    "goal_diff_diff_10",
+    "avg_opp_elo_diff_10",
+    "wins_diff_10",
+    "draws_diff_10",
+    "losses_diff_10",
+    "rest_days_diff",
+    "days_since_prev_match_diff",
+    "matches_prev_30d_diff",
+    "matches_prev_90d_diff",
+    "home_form_diff",
+    "away_form_diff",
+    "venue_form_diff"
+  ],
+  "class_mapping": {
+    "A": 0,
+    "D": 1,
+    "H": 2
+  },
+  "split_dates": {
+    "train_end": "2015-01-01",
+    "val_end": "2019-01-01",
+    "test_end": "2026-01-01"
+  },
+  "split_sizes": {
+    "train": 38414,
+    "val": 3812,
+    "test": 6868
+  },
+  "model_versions": {
+    "catboost": "1.2.7",
+    "lightgbm": "4.5.0",
+    "xgboost": "2.1.3",
+    "sklearn": "1.5.2"
+  },
+  "hyperparameters": {
+    "catboost": {
+      "depth": 6,
+      "learning_rate": 0.03,
+      "best_iteration": 792
+    },
+    "lightgbm": {
+      "num_leaves": 31,
+      "learning_rate": 0.03,
+      "best_iteration": 168
+    },
+    "xgboost": {
+      "max_depth": 4,
+      "learning_rate": 0.03,
+      "best_iteration": 221
+    }
+  },
+  "calibration": {
+    "catboost": {
+      "method": "none",
+      "test_logloss_uncalibrated": 0.8586882897270813,
+      "test_logloss_isotonic": 0.8998271149336874,
+      "test_logloss_sigmoid": 0.8654863930072547,
+      "test_logloss_chosen": 0.8586882897270813
+    },
+    "lightgbm": {
+      "method": "none",
+      "test_logloss_uncalibrated": 0.8604239909907708,
+      "test_logloss_isotonic": 0.8861035469067233,
+      "test_logloss_sigmoid": 0.867081810515836,
+      "test_logloss_chosen": 0.8604239909907708
+    },
+    "xgboost": {
+      "method": "none",
+      "test_logloss_uncalibrated": 0.8653553765467513,
+      "test_logloss_isotonic": 0.9107397564937147,
+      "test_logloss_sigmoid": 0.8700285747057127,
+      "test_logloss_chosen": 0.8653553765467513
+    }
+  },
+  "ensemble_weights": {
+    "catboost": 0.6666765256996813,
+    "lightgbm": 3.419077992801897e-20,
+    "xgboost": 0.33332347430031883
+  },
+  "evaluation_metrics": {
+    "catboost": {
+      "model": "catboost",
+      "accuracy": 0.6115317414094351,
+      "balanced_accuracy": 0.5088160476375939,
+      "macro_f1": 0.4591677960721112,
+      "log_loss": 0.8586882897270813,
+      "brier": 0.5035041211451587,
+      "ece": 0.016854557140402786
+    },
+    "lightgbm": {
+      "model": "lightgbm",
+      "accuracy": 0.609784507862551,
+      "balanced_accuracy": 0.5087812695866097,
+      "macro_f1": 0.4603597689725709,
+      "log_loss": 0.8604239909907708,
+      "brier": 0.5050577883605576,
+      "ece": 0.019373599637956845
+    },
+    "xgboost": {
+      "model": "xgboost",
+      "accuracy": 0.6065812463599302,
+      "balanced_accuracy": 0.500068377475104,
+      "macro_f1": 0.4479921544040811,
+      "log_loss": 0.8653553765467513,
+      "brier": 0.507736731658682,
+      "ece": 0.017858690020818656
+    },
+    "ensemble": {
+      "model": "ensemble",
+      "accuracy": 0.6105125218404194,
+      "balanced_accuracy": 0.5061220795321196,
+      "macro_f1": 0.45305045860839427,
+      "log_loss": 0.8587034396003023,
+      "brier": 0.5036064638909,
+      "ece": 0.015218787825382777
+    }
+  },
+  "confusion_matrices": {
+    "catboost": [
+      [
+        1255,
+        41,
+        727
+      ],
+      [
+        490,
+        30,
+        1038
+      ],
+      [
+        351,
+        21,
+        2915
+      ]
+    ],
+    "lightgbm": [
+      [
+        1263,
+        26,
+        734
+      ],
+      [
+        490,
+        36,
+        1032
+      ],
+      [
+        365,
+        33,
+        2889
+      ]
+    ],
+    "xgboost": [
+      [
+        1198,
+        13,
+        812
+      ],
+      [
+        447,
+        15,
+        1096
+      ],
+      [
+        323,
+        11,
+        2953
+      ]
+    ],
+    "ensemble": [
+      [
+        1245,
+        16,
+        762
+      ],
+      [
+        488,
+        18,
+        1052
+      ],
+      [
+        346,
+        11,
+        2930
+      ]
+    ]
+  },
+  "per_class_metrics": {
+    "catboost": {
+      "A": {
+        "precision": 0.5987595419847328,
+        "recall": 0.620365793376174,
+        "f1": 0.6093712066035446
+      },
+      "D": {
+        "precision": 0.32608695652173914,
+        "recall": 0.019255455712451863,
+        "f1": 0.03636363636363636
+      },
+      "H": {
+        "precision": 0.6228632478632479,
+        "recall": 0.8868268938241558,
+        "f1": 0.7317685452491528
+      }
+    },
+    "lightgbm": {
+      "A": {
+        "precision": 0.5963172804532578,
+        "recall": 0.6243203163618388,
+        "f1": 0.6099975851243661
+      },
+      "D": {
+        "precision": 0.37894736842105264,
+        "recall": 0.023106546854942234,
+        "f1": 0.043557168784029036
+      },
+      "H": {
+        "precision": 0.6206229860365199,
+        "recall": 0.8789169455430483,
+        "f1": 0.7275245530093175
+      }
+    },
+    "xgboost": {
+      "A": {
+        "precision": 0.608739837398374,
+        "recall": 0.5921898171033119,
+        "f1": 0.6003507892758707
+      },
+      "D": {
+        "precision": 0.38461538461538464,
+        "recall": 0.009627727856225931,
+        "f1": 0.01878522229179712
+      },
+      "H": {
+        "precision": 0.6074881711581979,
+        "recall": 0.8983875874657743,
+        "f1": 0.7248404516445753
+      }
+    },
+    "ensemble": {
+      "A": {
+        "precision": 0.5988455988455988,
+        "recall": 0.6154226396440929,
+        "f1": 0.6070209653827401
+      },
+      "D": {
+        "precision": 0.4,
+        "recall": 0.011553273427471117,
+        "f1": 0.022457891453524642
+      },
+      "H": {
+        "precision": 0.6176222596964587,
+        "recall": 0.8913903255247947,
+        "f1": 0.7296725189889179
+      }
+    }
+  },
+  "best_single_model": "catboost",
+  "seed": 42,
+  "git_commit": null,
+  "total_runtime_sec": 141.5
+}
